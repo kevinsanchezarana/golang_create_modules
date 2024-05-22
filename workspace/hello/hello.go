@@ -7,5 +7,6 @@ import (
 )
 
 func main() {
-	fmt.Println(reverse.String("Hello"), reverse.Int(24601))
+	fmt.Println(reverse.String("Hello"))
+	// You can even add new methods in third modules and use them: reverse.Int(24601)
 }
