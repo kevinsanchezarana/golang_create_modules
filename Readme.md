@@ -37,3 +37,11 @@ Installing the package in the SO:
 - Alternative we can set all the Golang binaries SO path: `go env -w GOBIN=/binary-golang-path` 
 - Move the binary to the expected binary path: `go install`
 - Executing the `hello` or `binary-name` anywhere
+
+Workspaces / multi-module: They are a way to share in an easy way to share different modules. We need to do;:
+- Create a folder representing the workspace.
+- Adding some modules inside like the previous `hello`.
+- Init the workspace and adding modules: `go work init ./hello`
+- You can execute modules from the workspace: `go run ./hello`
+- Adding new modules to the workspace: `go work use ./example/hello`
+- You can share code each others
