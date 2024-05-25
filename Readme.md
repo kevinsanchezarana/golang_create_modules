@@ -45,3 +45,8 @@ Workspaces / multi-module: They are a way to share in an easy way to share diffe
 - You can execute modules from the workspace: `go run ./hello`
 - Adding new modules to the workspace: `go work use ./example/hello`
 - You can share code each others
+
+Tips to check:
+- Effective Go: https://go.dev/doc/code
+- How to write Go code: https://go.dev/doc/effective_go
+- Documentation: https://go.dev/doc/
