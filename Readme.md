@@ -25,7 +25,11 @@ Create the module:
 `go mod init example.com/greetings`
 
 Testing:
-`go test -v`
+- Common way executing all of them in the folder: `go test -v`
+- Specify a single file: `go test -run=FuzzReverse`
+- In the fuzzing tests (generating random inputs automatically), you can generate random values using that during x time: `go test -fuzz=Fuzz -fuzztime 10s`
+- You can only execute the case that you want using that: `go test -run=FuzzReverse/050217fbe64bef4d`
+
 
 Compiles the packages, along with their dependencies, but it doesn't install the results.:
 - `go build` (In the main/executable module)
