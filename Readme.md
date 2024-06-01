@@ -12,6 +12,9 @@ Running a Golang plugin
 Refreshing dependencies
 `go mod tidy`
 
+Getting specific dependencies
+`go get golang.org/x/text@v0.3.5`
+
 Official Golang courses
 https://go.dev/doc/tutorial/
 
@@ -54,3 +57,8 @@ Tips to check:
 - Effective Go: https://go.dev/doc/code
 - How to write Go code: https://go.dev/doc/effective_go
 - Documentation: https://go.dev/doc/
+
+Security tools:
+- Installing detecting vulnerabilities tool: `go install golang.org/x/vuln/cmd/govulncheck@latest`
+- Executing the tool: `govulncheck ./...`
+- Note: Set up the `GOBIN` env environment: `go env GOBIN` and `export GOBIN=$HOME/go/bin`
